@@ -9,4 +9,4 @@ ARG SQL_SCRIPT_URL="https://github.com/openimis/database_ms_sqlserver/releases/d
 RUN wget $SQL_SCRIPT_URL -O /sql-files.zip
 COPY script/* /
 RUN apt-get update && apt-get install unzip -y
-RUN unzip /sql-files.zip -d /
+RUN unzip /sql-files-v1.7.0-rc0.zip -d /
